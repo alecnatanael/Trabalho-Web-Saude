@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 0. Variáveis */
+
+:root {
+	--ff-primary: Helvetica, Arial, sans-serif;
+
+	--clr-cianoescuro: #026E81;
+	--clr-azulmarinho: #191970;
+	--clr-complementar: #FF9933;
+	--clr-cinzazul: #A1C7E0;
+	--clr-white: #f5f5f5;
+}
+
+/* 1. Estilos gerais */
+
+body {
+	background-color: var(--clr-white);
+	font-family: var(--ff-primary);
+	background-image: url("img/Fundo.jpg");
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: white
+}
+
+hr {
+	border: none;
+	background-color: var(--clr-complementar);
+	height: 2px;
+	width: 140px;
+	margin: 20px auto;
+}
+
+.container {
+	position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 1000px;
+   background-color: var(--clr-white);
+   margin-bottom: 10em;
+}
+
+h2 {
+	color: var(--clr-azulmarinho);
+}
+
+/* 2. Menu */
+
+.menu-bg {
+	background-color: var(--clr-cianoescuro);
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	max-width: 200px;
+	max-height: 100px;
+}
+
+.menu__logo {
+	margin: 10px;
+}
+
+.nav__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav__link {
+	padding: 20px 10px;
+}
+
+.botao {
+	margin: 10px;
+	float: right;
+}
+
+header {
+	margin-bottom: 10em;
+}
+
+/* 3. Main Title */
+
+.titulo {
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: center;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+
+/* 4.Banner */
+
+/* Optei por deixar o background mesmo... */
+
+/* 5.Calcular IMC */
+
+.texto {
+    margin: 20px 20px 10px 20px;
+}
+
+.tabela {
+    margin: 0px 20px 40px 50px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    text-align: center;
+}
+
+.linha {
+    background-color: var(--clr-cinzazul);
+}
+
+label {
+	line-height: 2;
+}
+
+fieldset {
+	max-width: auto;
+	border: 0;
+}
+
+
+/* 6.Quem somos */
+
+iframe {
+	margin-left: 10em;
+}
+
+.valores {
+	list-style-type: circle;
+}
+
+h4 {
+	color: var(--clr-cianoescuro);
+}
+
+/* 7. Cadastre-se */
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: var(--clr-cianoescuro);
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo imput[type="text"], .campo input[type="email"], .campo select {
+    padding: 0.2em;
+    border: 1px solid var(--clr-azulmarinho);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo input:focus, .campo select:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.botao {
+    font-size: 1.2em;
+    background: var(--clr-cianoescuro);
+    border: 0;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.botao:hover{
+    background: var(--clr-complementar);
+    box-shadow:inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
