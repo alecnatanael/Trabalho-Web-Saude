@@ -113,110 +113,110 @@
 			<br>
 			<h2 id="cadastro" class="texto">Cadastre-se</h2>
 			<p class="texto">&emsp;Assine a nossa newsletter! Receba toda manhã um e-mail com dicas, receitas, exercícios e informações úteis que lhe ajudarão a desenvolver uma rotina produtiva cultivando hábitos mais saldáveis. É de graça!</p>
+			<form>
+				<fieldset class="grupo">
+            	    <div class="campo">
+            	        <label for="nome"><strong>Nome</strong></label>
+            	        <input type="text" id="nome" placeholder="ex: Maria" required>
+            	    </div>
+				
+            	    <div class="campo">
+            	        <label for="sobrenome"><strong>Sobrenome</strong></label>
+            	        <input type="text" id="sobrenome" placeholder="ex: Souza Silva" required>
+            	    </div>
+				
+            	    <div class="campo">
+            	        <label for="gender"><strong>Gênero</strong></label>
+            	        <label>
+            	            <input type="radio" name="gender" value="masculino" required>Masculino
+            	        </label>
+            	        <label>
+            	            <input type="radio" name="gender" value="feminino" required>Feminino
+            	        </label>
+            	        <label>
+            	            <input type="radio" name="gender" value="naoresponde" required>Prefiro não informar
+            	        </label>
+            	    </div>
+				
+            	    <div class="campo">
+            	        <label for="datadeNascimento"><strong>Data de Nascimento</strong></label>
+            	        <input type="date" value="" id="datadeNascimento" required>
+            	    </div>
 
-			<fieldset class="grupo">
-                <div class="campo">
-                    <label for="nome"><strong>Nome</strong></label>
-                    <input type="text" id="nome" placeholder="ex: Maria">
-                </div>
-    
-                <div class="campo">
-                    <label for="sobrenome"><strong>Sobrenome</strong></label>
-                    <input type="text" id="sobrenome" placeholder="ex: Souza Silva">
-                </div>
-            
-                <div class="campo">
-                    <label for="gender"><strong>Gênero</strong></label>
-                    <label>
-                        <input type="radio" name="gender" value="masculino">Masculino
-                    </label>
-                    <label>
-                        <input type="radio" name="gender" value="feminino">Feminino
-                    </label>
-                    <label>
-                        <input type="radio" name="gender" value="naoresponde">Prefiro não informar
-                    </label>
-                </div>
-    
-                <div class="campo">
-                    <label for="datadeNascimento"><strong>Data de Nascimento</strong></label>
-                    <input type="date" value="" id="datadeNascimento">
-                </div>
-
-				<div class="campo">
-					<label for="cpf"><strong>CPF</strong></label>
-                    <input type="text" id="cpf" placeholder="ex: 123.456.789-01">
-				</div>
-			</fieldset>	
-    
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="email"><strong>Email</strong></label>
-                    <input type="email" id="email" placeholder="emailexemplo@provedor.com">
-                </div>
-    
-                <div class="campo">
-                    <label for="celular"><strong>Celular</strong></label>
-                    <input type="text" id="celular" placeholder="ex: 12 93456-7890">
-                </div>
-            </fieldset>
-    
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="logradouro"><strong>Logradouro</strong></label>
-                    </label>
-                    <textarea rows="2" style="width: 15em" id="logradouro" placeholder="ex: Estrada de Itapecerica, 5859 - Capão Redondo"></textarea>
-                </div>
-				<div class="campo">
-					<label for="numeroLogra"><strong>Número</strong></label>
-					<input type="text" id="numeroLogra" placeholder="ex: 1234"> 
-				</div>
-				<div class="campo">
-					<label for="cidade"><strong>Munícipio</strong></label>
-					<input type="text" id="cidade" placeholder="ex: São Paulo"> 
-				</div>
-				<div class="campo">
-					<label for="CEP"><strong>CEP</strong></label>
-					<input type="text" id="CEP" placeholder="ex: 05890-020">
-				</div>
-                <div class="campo">
-                    <label for="uf"><strong>UF</strong></label>
-                    <select id="uf">
-                        <option selected disabled value="">Selecione</option>
-                        <option>AC</option>
-                        <option>AL</option>
-                        <option>AP</option>
-                        <option>AM</option>
-                        <option>BA</option>
-                        <option>CE</option>
-                        <option>DF</option>
-                        <option>ES</option>
-                        <option>GO</option>
-                        <option>MA</option>
-                        <option>MT</option>
-                        <option>MS</option>
-                        <option>MG</option>
-                        <option>PA</option>
-                        <option>PB</option>
-                        <option>PR</option>
-                        <option>PE</option>
-                        <option>PI</option>
-                        <option>RJ</option>
-                        <option>RN</option>
-                        <option>RS</option>
-                        <option>RO</option>
-                        <option>RR</option>
-                        <option>SC</option>
-                        <option>SP</option>
-                        <option>SE</option>
-                        <option>TO</option>
-                    </select>
-					<br><br><br>
-                </div>
-				<button type="submit" class="botao"><a href="index.html">Enviar</a></button>
-            </fieldset>
+					<div class="campo">
+						<label for="cpf"><strong>CPF</strong></label>
+            	        <input type="text" id="cpf" placeholder="ex: 123.456.789-01" required>
+					</div>
+				</fieldset>	
+			
+            	<fieldset class="grupo">
+            	    <div class="campo">
+            	        <label for="email"><strong>Email</strong></label>
+            	        <input type="email" id="email" placeholder="emailexemplo@provedor.com" required>
+            	    </div>
+				
+            	    <div class="campo">
+            	        <label for="celular"><strong>Celular</strong></label>
+            	        <input type="text" id="celular" placeholder="ex: 12 93456-7890" required>
+            	    </div>
+            	</fieldset>
+			
+            	<fieldset class="grupo">
+            	    <div class="campo">
+            	        <label for="logradouro"><strong>Logradouro</strong></label>
+            	        </label>
+            	        <textarea rows="2" style="width: 15em" id="logradouro" placeholder="ex: Estrada de Itapecerica, 5859 - Capão Redondo" required></textarea>
+            	    </div>
+					<div class="campo">
+						<label for="numeroLogra"><strong>Número</strong></label>
+						<input type="text" id="numeroLogra" placeholder="ex: 1234" required> 
+					</div>
+					<div class="campo">
+						<label for="cidade"><strong>Munícipio</strong></label>
+						<input type="text" id="cidade" placeholder="ex: São Paulo" required> 
+					</div>
+					<div class="campo">
+						<label for="CEP"><strong>CEP</strong></label>
+						<input type="text" id="CEP" placeholder="ex: 05890-020" required>
+					</div>
+            	    <div class="campo">
+            	        <label for="uf"><strong>UF</strong></label>
+            	        <select id="uf" required>
+            	            <option selected disabled value="">Selecione</option>
+            	            <option>AC</option>
+            	            <option>AL</option>
+            	            <option>AP</option>
+            	            <option>AM</option>
+            	            <option>BA</option>
+            	            <option>CE</option>
+            	            <option>DF</option>
+            	            <option>ES</option>
+            	            <option>GO</option>
+            	            <option>MA</option>
+            	            <option>MT</option>
+            	            <option>MS</option>
+            	            <option>MG</option>
+            	            <option>PA</option>
+            	            <option>PB</option>
+            	            <option>PR</option>
+            	            <option>PE</option>
+            	            <option>PI</option>
+            	            <option>RJ</option>
+            	            <option>RN</option>
+            	            <option>RS</option>
+            	            <option>RO</option>
+            	            <option>RR</option>
+            	            <option>SC</option>
+            	            <option>SP</option>
+            	            <option>SE</option>
+            	            <option>TO</option>
+            	        </select>
+						<br><br><br>
+            	    </div>
+					<button type="submit" class="botao">Enviar</button>
+            	</fieldset>
+			</form>
 		</div>
-
 	</div>
 </body>
 </html>
